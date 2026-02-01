@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
 /// Example:
@@ -52,20 +54,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBRjQuTdw9vggWDCC5GY45h_m1Mad4E5sM',
-    appId: '1:451046688273:android:9708284b93eca38d59d3b0',
-    messagingSenderId: '451046688273',
-    projectId: 'my-spotify-clone-75fee',
-    storageBucket: 'my-spotify-clone-75fee.appspot.com',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['ANDROID_API_KEY']!,
+    appId: dotenv.env['ANDROID_APP_ID']!,
+    messagingSenderId: dotenv.env['ANDROID_MASSSAGING_SENDER_ID']!,
+    projectId: dotenv.env['ANDROID_PROJECT_ID']!,
+    storageBucket: dotenv.env['ANDROID_STORAGE_BUCKET']!,
   );
 
-  // static const FirebaseOptions ios = FirebaseOptions(
-  //   apiKey: 'AIzaSyDEkOQG2ilK99y9wJRGx2xXClwD9WjKtHI',
-  //   appId: '1:451046688273:ios:7e408556b726448459d3b0',
-  //   messagingSenderId: '451046688273',
-  //   projectId: 'my-spotify-clone-75fee',
-  //   storageBucket: 'my-spotify-clone-75fee.appspot.com',
-  //   iosBundleId: 'com.example.spotifyClone',
-  // );
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: dotenv.env['IOS_API_KEY']!,
+    appId: dotenv.env['IOS_APP_ID']!,
+    messagingSenderId: dotenv.env['IOS_MASSSAGING_SENDER_ID']!,
+    projectId: dotenv.env['IOS_PROJECT_ID']!,
+    storageBucket: dotenv.env['IOS_STORAGE_BUCKET']!,
+    iosBundleId: dotenv.env['IOS_BUNDLE_ID']!,
+  );
 }
