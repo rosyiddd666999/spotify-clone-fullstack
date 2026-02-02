@@ -67,7 +67,7 @@ class ProfilePage extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.50,
+          height: MediaQuery.of(context).size.height * 0.52,
           width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
