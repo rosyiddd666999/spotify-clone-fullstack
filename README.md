@@ -71,7 +71,6 @@ lib/
 ### Key Architectural Patterns:
 - **BLoC Pattern** for state management
 - **Repository Pattern** for data abstraction
-- **Use Cases** for business logic encapsulation
 - **Dependency Injection** with GetIt
 - **Clean routing** with GoRouter
 
