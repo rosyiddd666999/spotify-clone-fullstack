@@ -44,8 +44,6 @@ A full-featured music streaming application built with **Flutter** and **Firebas
 ### Overview Result
 ![App Overview](assets/images/presentation_2b_detail.jpg)
 
-*Screenshots showcasing Home, Search, Library, and Profile screens*
-
 ---
 
 ## 🏗️ Architecture
@@ -289,9 +287,7 @@ Clean, type-safe navigation with:
 
 | Home | Search | Library | Profile |
 |------|--------|---------|---------|
-| ![Home](assets/images/home.png) | ![Search](assets/images/search.png) | ![Play Song](assets/images/play_music.png) | ![Library](assets/images/library.png) |
-
-*Note: Replace with actual screenshot paths*
+| ![Home](assets/images/home.jpg) | ![Search](assets/images/search.jpg) | ![Play Song](assets/images/play_music.jpg) | ![Library](assets/images/library.jpg) |
 
 ---
 
